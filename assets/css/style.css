@@ -931,12 +931,147 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
-  list-style: none;
-  margin-bottom: 20px;
+.col-md-3 img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.portfolio #portfolio-flters li {
+#portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left:18%;
+  margin-right: 16%;
+}
+.portfolio h2{
+  text-align: center;
+  padding-top:40px;
+
+  }
+.portfolio #portfolio-flters {
+  list-style: none;
+  margin-bottom:20px;
+}
+
+#overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+  display: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50%;
+}
+@media only screen and (max-width: 755px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 19px;
+    padding-top: 20%;
+    /* font-size: 16px; */
+  }
+  .col-md-3 img{
+    width:100%px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:8%;
+    margin-right: 16%;
+  }
+  button{
+    margin-left: 2%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    /* margin-left: 10px; */
+
+    /* margin-right: -20%; */
+  }
+}
+@media only screen and (max-width: 425px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 16px;
+    padding-top: 20%;
+    font-size: 20px;
+  }
+  .col-md-3 img{
+    width:100%px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:8%;
+    margin-right: 16%;
+  }
+  button{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  #MERGE0{
+    width: 84%;
+    margin-left: 4%;
+    padding-bottom: 10px;
+  }
+  #MERGE1{
+    width: 100%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+  }
+  #comment{
+    margin-left: 4%;
+    width: 84%;
+  }
+}
+@media only screen and (min-width: 825px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    padding-top:30%;
+  }
+  .col-md-3 img{
+    width: 400px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:10%;
+    margin-right: 10%;
+  }
+}
+@media only screen and (min-width: 625px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    font-size: 30px;
+    left: 20px;
+    top: 20px;
+    text-align: center;
+    color: black;
+
+  }
+  .col-md-3 img{
+    width: 400px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:6%;
+    margin-right: 10%;
+  }
+}
+
+
+
+/* .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   margin: 10px 5px;
@@ -1016,12 +1151,12 @@ section {
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -1081,7 +1216,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
@@ -1183,133 +1318,12 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing .row {
-  padding-top: 40px;
-}
 
-.pricing .box {
-  padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
-  background: #fff;
-  height: 100%;
-  border-top: 4px solid #fff;
-  border-radius: 5px;
-}
-
-.pricing h3 {
-  font-weight: 500;
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #37517e;
-}
-
-.pricing h4 {
-  font-size: 48px;
-  color: #37517e;
-  font-weight: 400;
-  font-family: "Jost", sans-serif;
-  margin-bottom: 25px;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: #47b2e4;
-  font-size: 18px;
-  display: block;
-}
-
-.pricing ul {
-  padding: 20px 0;
-  list-style: none;
-  color: #999;
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0 10px 30px;
-  position: relative;
-}
-
-.pricing ul i {
-  color: #28a745;
-  font-size: 24px;
-  position: absolute;
-  left: 0;
-  top: 6px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-}
-
-.pricing ul .na i {
-  color: #ccc;
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .buy-btn {
-  display: inline-block;
-  padding: 12px 35px;
-  border-radius: 50px;
-  color: #47b2e4;
-  transition: none;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Jost", sans-serif;
-  transition: 0.3s;
-  border: 1px solid #47b2e4;
-}
-
-.pricing .buy-btn:hover {
-  background: #47b2e4;
-  color: #fff;
-}
-
-.pricing .featured {
-  border-top-color: #47b2e4;
-}
-
-.pricing .featured .buy-btn {
-  background: #47b2e4;
-  color: #fff;
-}
-
-.pricing .featured .buy-btn:hover {
-  background: #23a3df;
-}
-
-@media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .pricing .box {
-    max-width: 80%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media (max-width: 420px) {
-  .pricing .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
-}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
-.faq .faq-list {
+/* .faq .faq-list {
   padding: 0 100px;
 }
 
@@ -1386,7 +1400,7 @@ section {
   .faq .faq-list {
     padding: 0;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact
@@ -1467,11 +1481,11 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  /* border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4; */
   padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  /* background: #fff; */
+  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
 }
 
 .contact .php-email-form .form-group {
@@ -1543,9 +1557,9 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+/* .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   border-color: #47b2e4;
-}
+} */
 
 .contact .php-email-form input {
   height: 44px;
@@ -1871,8 +1885,22 @@ section {
 
 }
 
+.text{
+  display: none;
+}
+#overlay{
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.7;
+}
 
 
-
-
-
+#name{
+  background-color: transparent;
+  color: #fff;
+}
+.masseges{
+  background-color: transparent;
+  color: #fff;
+}

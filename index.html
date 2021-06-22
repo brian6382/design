@@ -160,41 +160,45 @@
     </section> <!--  End Cliens Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
+    <div class="portfolio">
+      <h2>PORTFOLIO</h2>
+      <div class="row" id="portfolio">
+        <div class="col-md-3" id="work1" >
+          <img  src="assets/portfolio/work1.jpg" alt="" >
+          <p id="overlay">BLACK STUDIO</p>
         </div>
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work4.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work2.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work3.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work1.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work5.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work6.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work7.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/portfolio/work8.jpg" class="img-fluid" alt=""></div>
-          </div>
+        <div class="col-md-3" id="work2">
+          <img src="assets/portfolio/work2.jpg" alt="work2" id="work2">
+          <p id="overlay2" >ONTARIO SECURITY</p>
         </div>
-
+        <div class="col-md-3" id="work3">
+          <img src="assets/portfolio/work3.jpg" alt="work3">
+          <p id="overlay3">PYRAMIDS</p>
+        </div>
+        <div class="col-md-3" id="work4">
+          <img src="assets/portfolio/work4.jpg" alt="work4">
+          <p id="overlay4" >JIM CARRY</p>
+        </div>
       </div>
-    </section><!-- End Portfolio Section -->
+      <div class="row" id="portfolio">
+          <div class="col-md-3" id="work5">
+            <img src="assets/portfolio/work5.jpg" alt="work5">
+            <p id="overlay5" >HAVE A<br>GOOD DAY</p>
+          </div>
+          <div class="col-md-3" id="work6">
+            <img src="assets/portfolio/work6.jpg" alt="work6">
+            <p id="overlay6">CALCULATOR</p>
+          </div>
+          <div class="col-md-3" id="work7">
+            <img src="assets/portfolio/work7.jpg" alt="work3">
+            <p id="overlay7" >BURNED</p>
+          </div>
+          <div class="col-md-3" id="work8">
+            <img src="assets/portfolio/work8.jpg" alt="work">
+            <p id="overlay8" >BAILEY<br>WONGER</p>
+          </div>
+        </div>
+    </div>
    
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -205,17 +209,17 @@
             <form name="myForm"   action="http://eepurl.com/hBLlRz" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <label for="name"></label>
+                  <input  type="text" name="name" id="name" class="form-control" id="name" required  placeholder="Enter Your Name">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <label for="name"></label>
+                  <input type="email" class="form-control"  id="name"  name="email" id="email" required placeholder="Enter Your Email">
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea id="messages" class="form-control" name="message" rows="10" required></textarea>
+                <label for="name"></label>
+                <textarea id="messages"    class="form-control masseges" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
                 <!-- <p id="msg" style="color: green"></p> -->
@@ -272,49 +276,18 @@
 
   
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> -->
 
   <!--  Main JS File -->
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    $(document).ready(function (){
-       $("#img1").click(function() {
-          $("#ttt").show();
-          $("#img1").hide();
-
-       });
-       $("#ttt").click(function() {
-          $("#ttt").hide();
-          $("#img1").show();
-
-       });
-        $("#img2").click(function() {
-          $("#ttt2").show();
-          $("#img2").hide();
-
-       });
-       $("#ttt2").click(function() {
-          $("#ttt2").hide();
-          $("#img2").show();
-
-       });
-        $("#img3").click(function() {
-          $("#ttt3").show();
-          $("#img3").hide();
-
-       });
-       $("#ttt3").click(function() {
-          $("#ttt3").hide();
-          $("#img3").show();
-
-       });
-    });
-  </script>
+  <script src="assets/js/app.js"></script>
+ 
+  
 
   <script>
     function validateForm() {
